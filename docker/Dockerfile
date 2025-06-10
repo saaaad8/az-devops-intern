@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 #copy the index.html file to the nginx html directory
-COPY index.html /usr/share/nginx/html/index.html
+COPY docker/index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
 
