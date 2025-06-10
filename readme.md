@@ -67,13 +67,3 @@ Deliverables:
 * YAML
 
 ---
-
-**Folder Structure**
-.
-├── azure-pipelines.yml
-├── main.tf
-└── docker/
-├── Dockerfile
-└── index.html
-
----
