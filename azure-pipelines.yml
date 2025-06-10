@@ -2,10 +2,10 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Macpool
 
 variables:
-  serviceConnection: 'AzureConnection'
+  serviceConnection: 'ACR-piprline'
 
   acrName: 'acrCloudDrove1254'
 
