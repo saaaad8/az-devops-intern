@@ -22,4 +22,8 @@ RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor -o /usr/sh
 # ✅ Install Azure CLI using Microsoft script
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
-CMD [ "bash" ]
+# ENTRYPOINT script
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

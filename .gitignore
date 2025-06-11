@@ -4,3 +4,4 @@ terraform.tfstate
 terraform.tfvars
 terraform.tfstate.backup
 tfplan
+plan.out
