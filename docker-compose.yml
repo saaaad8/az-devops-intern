@@ -1,0 +1,11 @@
+services:
+  terraform:
+    build:  
+      context: .
+      dockerfile: ./docker/Dockerfile2
+    image: terraform:latest  
+    container_name: terraform
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    tty: true

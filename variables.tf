@@ -26,3 +26,21 @@ variable "acr_sku" {
   type        = string
   default     = "Basic"
 }
+
+variable "app_service_plan_name" {
+  description = "The name of the App Service Plan."
+  type        = string
+  default     = "app-service-plan"
+}
+
+variable "app_service_plan_sku" {
+  description = "The SKU of the App Service Plan."
+  type        = string
+  default     = "B1"
+}
+
+variable "web_app_name" {
+  description = "The name of the Web App."
+  type        = string
+  default     = "web-app"
+}
